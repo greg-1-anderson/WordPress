@@ -10,8 +10,8 @@ if [ -z "$CIRCLE_PULL_REQUEST" ] ; then
   exit 1
 fi
 
-// CIRCLE_PULL_REQUEST=https://github.com/greg-1-anderson/WordPress/pull/6
-PR_NUMBER=$(echo CIRCLE_PULL_REQUEST | sed -e 's#.*/pull/##')
+# CIRCLE_PULL_REQUEST=https://github.com/greg-1-anderson/WordPress/pull/6
+PR_NUMBER=$(echo $CIRCLE_PULL_REQUEST | sed -e 's#.*/pull/##')
 
 echo curl https://api.github.com/repos/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/pulls/$CIRCLE_PR_NUMBER
 curl https://api.github.com/repos/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/pulls/$CIRCLE_PR_NUMBER
