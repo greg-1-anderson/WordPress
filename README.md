@@ -1,3 +1,5 @@
+This is a PR that will be automatically merged to master once it is manually merged to the default branch.
+
 # WordPress
 
 This is a WordPress repository configured to run on the [Pantheon platform](https://pantheon.io).
