@@ -25,7 +25,7 @@ jobs:
                 name: Cleanup
                 command: ./.circleci/cleanup.sh
             - run:
-                name: Confirm safety
+                name: Confirm that it is safe to merge
                 command: ./.circleci/confirm-safety.sh
     automerge:
         <<: *defaults
